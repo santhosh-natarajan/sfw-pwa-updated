@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-flash-screen',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlashScreenComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit(): void {
+    setTimeout(() => { this._router.navigate(['/form-view']) }, 2000)
   }
 
 }
