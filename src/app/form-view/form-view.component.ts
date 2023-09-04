@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class FormViewComponent implements OnInit {
 
+
   constructor(private _router:Router) { }
 
   ngOnInit(): void {
@@ -16,5 +17,7 @@ export class FormViewComponent implements OnInit {
   onClickBack() {
       return this._router.navigate(['/'])
   }
+
+
 
 }
